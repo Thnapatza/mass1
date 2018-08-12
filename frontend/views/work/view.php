@@ -11,25 +11,105 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="work-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-	 	<div class="row"> 
-		<div class="col-md-6">
-			<div class="panel panel-info">
-  			<div class="panel-heading">ความคิดเห็น</div>
-  			<div class="panel-body chat-box " style="height:300px; overflow:auto"> 
-  			<div id="chat"></div>
-  
-  			</div>	
-  			<form action="javascript:sendMsg()" method="post">
-    			  <input type="text" name="txt" id="txt" class="form-control" placeholder="send...">
-    			  <input type="submit"  value="send" class="btn btn-success btn-block">
-	  		</form>
-
-
+	<h1><?= Html::encode($this->title) ?></h1>
+	<div class="row">
+		<div class="form-group">
+			<?=Html::img('@web/images/t.jpg',['width' => '100%'])?>
 		</div>
 	</div>
-</div>
+	<div class="row">	
+		<div class="col-md-8">
+			<div class="row">
+			
+			<div class="panel-group col-md-2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                	<?=Html::img('@web/images/user.png',['width'=>'100%'])?>
+                </div>
+              </div>              
+            </div>
+            <div class="panel-group col-md-2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                	<?=Html::img('@web/images/user.png',['width'=>'100%'])?>
+                </div>
+              </div>              
+            </div>
+            <div class="panel-group col-md-2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                	<?=Html::img('@web/images/user.png',['width'=>'100%'])?>
+                </div>
+              </div>              
+            </div>
+            <div class="panel-group col-md-2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                	<?=Html::img('@web/images/user.png',['width'=>'100%'])?>
+                </div>
+              </div>              
+            </div>
+            <div class="panel-group col-md-2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                	<?=Html::img('@web/images/user.png',['width'=>'100%'])?>
+                </div>
+              </div>              
+            </div>
+            <div class="panel-group col-md-2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                	<?=Html::img('@web/images/user.png',['width'=>'100%'])?>
+                </div>
+              </div>              
+            </div>
+			</div>
+			<div class="row">
+        		<div class="panel panel-info">
+          			<div class="panel-heading">ความคิดเห็น</div>
+          			<div class="panel-body chat-box " style="height:300px; overflow:auto">
+          				<div id="chat"></div>  
+          			</div>	
+          			<form action="javascript:sendMsg()" method="post">
+            			  <input type="text" name="txt" id="txt" class="form-control" placeholder="send...">
+            			  <input type="submit"  value="send" class="btn btn-success btn-block">
+        	  		</form>
+        		</div>
+    		</div>
 		</div>
+		<div class="col-md-4">
+		<div class="row">
+			<div class="panel panel-default">
+              <div class="panel-heading">Heading สินค้า</div>
+              <div class="panel-body">
+              	<p>รายละเอียด 1</p>
+              	<p>รายละเอียด 2</p>
+              	<p>รายละเอียด 3</p>
+              	<p>รายละเอียด 4</p>
+              	<p>รายละเอียด 5</p>              
+              </div>
+            </div>
+		</div>
+		<div class="row">
+    		<div class="panel panel-default">
+              <div class="panel-heading">Heading สินค้า</div>
+              <div class="panel-body">
+              	<p>รายละเอียด 1</p>
+              	<p>รายละเอียด 2</p>
+              	<p>รายละเอียด 3</p>
+              	<p>รายละเอียด 4</p>
+              	<p>รายละเอียด 5</p>              
+              </div>
+            </div>
+		</div>
+		</div>
+	</div>
+ 	<div class="row"> 
+	<div class="col-md-6">
+		
+	</div>
+</div>
+</div>
 		<?php foreach ($room as $r):?>
   				<script type="text/javascript">
 			setInterval(function(){listMsg()}, 500);

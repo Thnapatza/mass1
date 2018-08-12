@@ -7,6 +7,7 @@ use yii\helpers\Html;
 use yii\widgets\Pjax;
 use yii\helpers\ArrayHelper;
 use common\models\Massagetype;
+use yii\helpers\Url;
 
 
 $this->title = "ค้นหาสถานที่นวด";
@@ -176,7 +177,7 @@ foreach($dataProvider->models as $data):
     <div class="panel-heading">
     <div class="row">
     	<div class="col-md-10 col-xs-6"><h3 class="panel-title"><i class="glyphicon glyphicon-signal"></i> ค้นหางานจาก Google Map</h3></div>
-    	<div class="col-md-2 col-xs-6"><a href="/massage/work/work-search-map" class="btn btn-danger pull-right">Refresh  Map <span class="	glyphicon glyphicon-repeat"></span></a></div>
+    	<div class="col-md-2 col-xs-6"><a href="<?=Url::toRoute(['/work/work-search-map']) ?>" class="btn btn-danger pull-right">Refresh  Map <span class="	glyphicon glyphicon-repeat"></span></a></div>
     </div>
     </div>
 

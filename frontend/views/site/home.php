@@ -25,7 +25,7 @@ $this->registerJs("
 		   	<h2 style= "color:black;" >ค้นหาร้านสปา ร้านนวดแผนไทย ร้านนวดแผนโบราณ ในประเทศไทย</h2>
 		   	<span class="glyphicon glyphicon-arrow-down"></span>
 		   	<br>
-		   	<a style="color:black;" class="btn btn-warning" href="http://localhost/massage/work/work-search-map"><span class="	glyphicon glyphicon-search"> สถานที่นวด	</span></a>  
+		   	<a style="color:black;" class="btn btn-warning" href="http://localhost/massage/work/work-search-map"><span class="	glyphicon glyphicon-search"></span> สถานที่นวด</a>  
 		    </div>
 		     </center>
 		     
